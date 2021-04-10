@@ -1,9 +1,9 @@
-﻿using CG.Options.Properties;
+﻿using CG;
+using CG.Options.Properties;
 using CG.Validations;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Linq;
-using System.Text;
 
 namespace Microsoft.AspNetCore.DataProtection
 {
@@ -84,7 +84,8 @@ namespace Microsoft.AspNetCore.DataProtection
                             obj.GetType().Name
                             ),
                         innerException: ex
-                        );
+                        ).SetOriginator(nameof(DataProtectorExtensions))
+                         .SetDateTime();
                 }
             });
 
@@ -106,7 +107,7 @@ namespace Microsoft.AspNetCore.DataProtection
                             ) is ProtectedPropertyAttribute attr)
                     {
                         // If we get here then we should try to protect the value
-                        //   of the property.
+                        //   of the decorated property.
                         var unprotectedPropertyValue = prop.GetGetMethod().Invoke(
                             options,
                             Array.Empty<object>()
@@ -115,22 +116,12 @@ namespace Microsoft.AspNetCore.DataProtection
                         // Check for empty strings first ...
                         if (false == string.IsNullOrEmpty(unprotectedPropertyValue))
                         {
-                            // Convert the unencrypted value to bytes.
-                            var unprotectedBytes = Encoding.UTF8.GetBytes(
+                            // Protect the value.
+                            var protectedPropertyValue = dataProtector.Protect(
                                 unprotectedPropertyValue
                                 );
 
-                            // Protect the bytes.
-                            var protectedBytes = dataProtector.Protect(
-                                unprotectedBytes
-                                );
-
-                            // Convert the bytes back to a string.
-                            var protectedPropertyValue = Convert.ToBase64String(
-                                protectedBytes
-                                );
-
-                            // Write the protected/encoded string to the original property.
+                            // Write the protected string to the original property.
                             prop.GetSetMethod().Invoke(
                                 options,
                                 new[] { protectedPropertyValue }
@@ -148,7 +139,8 @@ namespace Microsoft.AspNetCore.DataProtection
                             options.GetType().Name
                         ),
                         innerException: ex
-                    );
+                    ).SetOriginator(nameof(DataProtectorExtensions))
+                     .SetDateTime();
                 }
             });
 
@@ -222,7 +214,8 @@ namespace Microsoft.AspNetCore.DataProtection
                             obj.GetType().Name
                             ),
                         innerException: ex
-                        );
+                        ).SetOriginator(nameof(DataProtectorExtensions))
+                         .SetDateTime();
                 }
             });
 
@@ -246,7 +239,7 @@ namespace Microsoft.AspNetCore.DataProtection
                     if (null != attr)
                     {
                         // If we get here then we should try to unprotect the value
-                        //   of the property.
+                        //   of the decorated property.
                         var encryptedPropertyValue = prop.GetGetMethod().Invoke(
                             options,
                             Array.Empty<object>()
@@ -255,19 +248,9 @@ namespace Microsoft.AspNetCore.DataProtection
                         // Check for empty strings first ...
                         if (!string.IsNullOrEmpty(encryptedPropertyValue))
                         {
-                            // Convert the encrypted value to bytes.
-                            var encryptedBytes = Convert.FromBase64String(
+                            // Unprotect the value.
+                            var unprotectedPropertyValue = dataProtector.Unprotect(
                                 encryptedPropertyValue
-                                );
-
-                            // Unprotect the bytes.
-                            var unprotectedBytes = dataProtector.Unprotect(
-                                encryptedBytes
-                                );
-
-                            // Convert the bytes back to a (non-encoded) string.
-                            var unprotectedPropertyValue = Encoding.UTF8.GetString(
-                                unprotectedBytes
                                 );
 
                             // Write the unprotected string to the original property.
@@ -288,7 +271,8 @@ namespace Microsoft.AspNetCore.DataProtection
                             options.GetType().Name
                             ),
                         innerException: ex
-                        );
+                        ).SetOriginator(nameof(DataProtectorExtensions))
+                         .SetDateTime();
                 }
             });
 
