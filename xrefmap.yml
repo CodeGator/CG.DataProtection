@@ -1,0 +1,47 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Microsoft.AspNetCore.DataProtection
+  name: Microsoft.AspNetCore.DataProtection
+  href: api/Microsoft.AspNetCore.DataProtection.html
+  commentId: N:Microsoft.AspNetCore.DataProtection
+  fullName: Microsoft.AspNetCore.DataProtection
+  nameWithType: Microsoft.AspNetCore.DataProtection
+- uid: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions
+  name: DataProtectorExtensions
+  href: api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html
+  commentId: T:Microsoft.AspNetCore.DataProtection.DataProtectorExtensions
+  fullName: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions
+  nameWithType: DataProtectorExtensions
+- uid: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.DecryptProperties(Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,System.Object)
+  name: DecryptProperties(IDataProtector, IConfiguration, Object)
+  href: api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html#Microsoft_AspNetCore_DataProtection_DataProtectorExtensions_DecryptProperties_Microsoft_AspNetCore_DataProtection_IDataProtector_Microsoft_Extensions_Configuration_IConfiguration_System_Object_
+  commentId: M:Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.DecryptProperties(Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,System.Object)
+  fullName: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.DecryptProperties(Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration, System.Object)
+  nameWithType: DataProtectorExtensions.DecryptProperties(IDataProtector, IConfiguration, Object)
+- uid: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.DecryptProperties*
+  name: DecryptProperties
+  href: api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html#Microsoft_AspNetCore_DataProtection_DataProtectorExtensions_DecryptProperties_
+  commentId: Overload:Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.DecryptProperties
+  isSpec: "True"
+  fullName: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.DecryptProperties
+  nameWithType: DataProtectorExtensions.DecryptProperties
+- uid: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.EncryptProperties(Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,System.Object)
+  name: EncryptProperties(IDataProtector, IConfiguration, Object)
+  href: api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html#Microsoft_AspNetCore_DataProtection_DataProtectorExtensions_EncryptProperties_Microsoft_AspNetCore_DataProtection_IDataProtector_Microsoft_Extensions_Configuration_IConfiguration_System_Object_
+  commentId: M:Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.EncryptProperties(Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,System.Object)
+  fullName: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.EncryptProperties(Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration, System.Object)
+  nameWithType: DataProtectorExtensions.EncryptProperties(IDataProtector, IConfiguration, Object)
+- uid: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.EncryptProperties*
+  name: EncryptProperties
+  href: api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html#Microsoft_AspNetCore_DataProtection_DataProtectorExtensions_EncryptProperties_
+  commentId: Overload:Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.EncryptProperties
+  isSpec: "True"
+  fullName: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.EncryptProperties
+  nameWithType: DataProtectorExtensions.EncryptProperties
+- uid: Microsoft.AspNetCore.DataProtection.ProtectedPropertyAttribute
+  name: ProtectedPropertyAttribute
+  href: api/Microsoft.AspNetCore.DataProtection.ProtectedPropertyAttribute.html
+  commentId: T:Microsoft.AspNetCore.DataProtection.ProtectedPropertyAttribute
+  fullName: Microsoft.AspNetCore.DataProtection.ProtectedPropertyAttribute
+  nameWithType: ProtectedPropertyAttribute
