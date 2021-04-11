@@ -68,6 +68,9 @@ namespace CG.DataProtection
                 new DirectoryInfo(destFolder)
                 );
 
+            // NOTE : we might need to create ctor overloads to deal with 
+            //   advanced scenarios, like key storage in azure, etc.
+
             // Create a local protector instance.
             Protector = Provider.CreateProtector(
                 nameof(DataProtector)

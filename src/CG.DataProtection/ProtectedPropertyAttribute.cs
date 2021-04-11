@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Microsoft.AspNetCore.DataProtection
+namespace CG.DataProtection
 {
     /// <summary>
     /// This class represents an encrypted option property.

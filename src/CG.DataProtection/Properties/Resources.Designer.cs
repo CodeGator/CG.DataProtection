@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CG.Options.Properties {
+namespace CG.DataProtection.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace CG.Options.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.Options.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CG.DataProtection.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,20 +61,20 @@ namespace CG.Options.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Attempting to unprotect data for property: &apos;{0}&apos; on object of type: &apos;{1}&apos;. It&apos;s likely the data for this property was either not encrypted or was corrupted at some point..
+        ///   Looks up a localized string similar to Attempting to protect data for property: &apos;{0}&apos; on object of type: &apos;{1}&apos;. It&apos;s likely the data for this property was either already encrypted or was corrupted at some point..
         /// </summary>
-        internal static string ConfigurationExtensions_DecryptProperties {
+        internal static string ConfigurationExtensions_ProtectProperties {
             get {
-                return ResourceManager.GetString("ConfigurationExtensions_DecryptProperties", resourceCulture);
+                return ResourceManager.GetString("ConfigurationExtensions_ProtectProperties", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Attempting to protect data for property: &apos;{0}&apos; on object of type: &apos;{1}&apos;. It&apos;s likely the data for this property was either already encrypted or was corrupted at some point..
+        ///   Looks up a localized string similar to Attempting to unprotect data for property: &apos;{0}&apos; on object of type: &apos;{1}&apos;. It&apos;s likely the data for this property was either not encrypted or was corrupted at some point..
         /// </summary>
-        internal static string ConfigurationExtensions_EncryptProperties {
+        internal static string ConfigurationExtensions_UnprotectProperties {
             get {
-                return ResourceManager.GetString("ConfigurationExtensions_EncryptProperties", resourceCulture);
+                return ResourceManager.GetString("ConfigurationExtensions_UnprotectProperties", resourceCulture);
             }
         }
     }

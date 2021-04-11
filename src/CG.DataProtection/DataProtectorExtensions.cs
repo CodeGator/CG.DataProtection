@@ -1,7 +1,7 @@
 ﻿using CG;
-using CG.Options.Properties;
+using CG.DataProtection;
+using CG.DataProtection.Properties;
 using CG.Validations;
-using Microsoft.Extensions.Configuration;
 using System;
 using System.Linq;
 
@@ -27,8 +27,6 @@ namespace Microsoft.AspNetCore.DataProtection
         /// </summary>
         /// <param name="dataProtector">The data protector object to use for the 
         /// operation.</param>
-        /// <param name="configuration">The configuration object to use for the 
-        /// operation.</param>
         /// <param name="options">The options object to use for the operation.</param>
         /// <returns>The value of the <paramref name="dataProtector"/> parameter, for 
         /// chaining calls together.</returns>
@@ -36,9 +34,8 @@ namespace Microsoft.AspNetCore.DataProtection
         /// one or more of the required parameters is missing or invalid.</exception>
         /// <exception cref="InvalidOperationException">This exception is thrown whenever
         /// the underlying cryptography operation fails, for any reason.</exception>
-        public static IDataProtector EncryptProperties(
+        public static IDataProtector ProtectProperties(
             this IDataProtector dataProtector,
-            IConfiguration configuration,
             object options
             )
         {
@@ -68,8 +65,7 @@ namespace Microsoft.AspNetCore.DataProtection
                     if (null != obj)
                     {
                         // Protect any properties for the object.
-                        dataProtector.EncryptProperties(
-                            configuration,
+                        dataProtector.ProtectProperties(
                             obj
                             );
                     }
@@ -79,7 +75,7 @@ namespace Microsoft.AspNetCore.DataProtection
                     // Wrap the exception.
                     throw new InvalidOperationException(
                         message: string.Format(
-                            Resources.ConfigurationExtensions_EncryptProperties,
+                            Resources.ConfigurationExtensions_ProtectProperties,
                             prop.Name,
                             obj.GetType().Name
                             ),
@@ -134,7 +130,7 @@ namespace Microsoft.AspNetCore.DataProtection
                     // Wrap the exception.
                     throw new InvalidOperationException(
                         message: string.Format(
-                            Resources.ConfigurationExtensions_EncryptProperties,
+                            Resources.ConfigurationExtensions_ProtectProperties,
                             prop.Name,
                             options.GetType().Name
                         ),
@@ -158,8 +154,6 @@ namespace Microsoft.AspNetCore.DataProtection
         /// </summary>
         /// <param name="dataProtector">The data protector object to use for 
         /// the operation.</param>
-        /// <param name="configuration">The configuration object to use for 
-        /// the operation.</param>
         /// <param name="options">The options object to use for the operation.</param>
         /// <returns>The value of the <paramref name="dataProtector"/> parameter,
         /// for chaining calls together.</returns>
@@ -167,9 +161,8 @@ namespace Microsoft.AspNetCore.DataProtection
         /// one or more of the required parameters is missing or invalid.</exception>
         /// <exception cref="InvalidOperationException">This exception is thrown whenever
         /// the underlying cryptography operation fails, for any reason.</exception>
-        public static IDataProtector DecryptProperties(
+        public static IDataProtector UnprotectProperties(
             this IDataProtector dataProtector,
-            IConfiguration configuration,
             object options
             )
         {
@@ -198,8 +191,7 @@ namespace Microsoft.AspNetCore.DataProtection
                     if (null != obj)
                     {
                         // Unprotect any properties for the object.
-                        dataProtector.DecryptProperties(
-                            configuration,
+                        dataProtector.UnprotectProperties(
                             obj
                             );
                     }
@@ -209,7 +201,7 @@ namespace Microsoft.AspNetCore.DataProtection
                     // Wrap the exception.
                     throw new InvalidOperationException(
                         message: string.Format(
-                            Resources.ConfigurationExtensions_DecryptProperties,
+                            Resources.ConfigurationExtensions_UnprotectProperties,
                             prop.Name,
                             obj.GetType().Name
                             ),
@@ -266,7 +258,7 @@ namespace Microsoft.AspNetCore.DataProtection
                     // Wrap the exception.
                     throw new InvalidOperationException(
                         message: string.Format(
-                            Resources.ConfigurationExtensions_DecryptProperties,
+                            Resources.ConfigurationExtensions_UnprotectProperties,
                             prop.Name,
                             options.GetType().Name
                             ),

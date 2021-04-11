@@ -117,10 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ConfigurationExtensions_DecryptProperties" xml:space="preserve">
-    <value>Attempting to unprotect data for property: '{0}' on object of type: '{1}'. It's likely the data for this property was either not encrypted or was corrupted at some point.</value>
-  </data>
-  <data name="ConfigurationExtensions_EncryptProperties" xml:space="preserve">
+  <data name="ConfigurationExtensions_ProtectProperties" xml:space="preserve">
     <value>Attempting to protect data for property: '{0}' on object of type: '{1}'. It's likely the data for this property was either already encrypted or was corrupted at some point.</value>
+  </data>
+  <data name="ConfigurationExtensions_UnprotectProperties" xml:space="preserve">
+    <value>Attempting to unprotect data for property: '{0}' on object of type: '{1}'. It's likely the data for this property was either not encrypted or was corrupted at some point.</value>
   </data>
 </root>

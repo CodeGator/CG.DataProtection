@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.218
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CG.DataProtection.QuickStart", "CG.DataProtection.QuickStart.csproj", "{8CE012CC-20E5-44DA-A44A-5A2DBB09B4A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.DataProtection", "..\..\src\CG.DataProtection\CG.DataProtection.csproj", "{58E20E58-D787-40ED-947D-A3B03DF59CBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CE012CC-20E5-44DA-A44A-5A2DBB09B4A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CE012CC-20E5-44DA-A44A-5A2DBB09B4A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CE012CC-20E5-44DA-A44A-5A2DBB09B4A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CE012CC-20E5-44DA-A44A-5A2DBB09B4A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E20E58-D787-40ED-947D-A3B03DF59CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E20E58-D787-40ED-947D-A3B03DF59CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E20E58-D787-40ED-947D-A3B03DF59CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E20E58-D787-40ED-947D-A3B03DF59CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9486F038-9C81-4B4C-91E0-78B99BD3FB14}
+	EndGlobalSection
+EndGlobal
