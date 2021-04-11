@@ -84,6 +84,43 @@ references:
   isSpec: "True"
   fullName: CG.DataProtection.DataProtector.Unprotect
   nameWithType: DataProtector.Unprotect
+- uid: CG.DataProtection.ProtectedPropertyAttribute
+  name: ProtectedPropertyAttribute
+  href: api/CG.DataProtection.ProtectedPropertyAttribute.html
+  commentId: T:CG.DataProtection.ProtectedPropertyAttribute
+  fullName: CG.DataProtection.ProtectedPropertyAttribute
+  nameWithType: ProtectedPropertyAttribute
+- uid: CG.DataProtection.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/CG.DataProtection.ServiceCollectionExtensions.html
+  commentId: T:CG.DataProtection.ServiceCollectionExtensions
+  fullName: CG.DataProtection.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions*
+  name: TryConfigureOptions
+  href: api/CG.DataProtection.ServiceCollectionExtensions.html#CG_DataProtection_ServiceCollectionExtensions_TryConfigureOptions_
+  commentId: Overload:CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions
+  isSpec: "True"
+  fullName: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions
+  nameWithType: ServiceCollectionExtensions.TryConfigureOptions
+- uid: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration)
+  name: TryConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration)
+  href: api/CG.DataProtection.ServiceCollectionExtensions.html#CG_DataProtection_ServiceCollectionExtensions_TryConfigureOptions__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_AspNetCore_DataProtection_IDataProtector_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: TryConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration)
+  fullName: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration)
+  fullName.vb: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: ServiceCollectionExtensions.TryConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration)
+  nameWithType.vb: ServiceCollectionExtensions.TryConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration)
+- uid: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,``0@)
+  name: TryConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration, out TOptions)
+  href: api/CG.DataProtection.ServiceCollectionExtensions.html#CG_DataProtection_ServiceCollectionExtensions_TryConfigureOptions__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_AspNetCore_DataProtection_IDataProtector_Microsoft_Extensions_Configuration_IConfiguration___0__
+  commentId: M:CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,``0@)
+  name.vb: TryConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration, ByRef TOptions)
+  fullName: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration, out TOptions)
+  fullName.vb: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration, ByRef TOptions)
+  nameWithType: ServiceCollectionExtensions.TryConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration, out TOptions)
+  nameWithType.vb: ServiceCollectionExtensions.TryConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration, ByRef TOptions)
 - uid: Microsoft.AspNetCore.DataProtection
   name: Microsoft.AspNetCore.DataProtection
   href: api/Microsoft.AspNetCore.DataProtection.html
@@ -96,35 +133,29 @@ references:
   commentId: T:Microsoft.AspNetCore.DataProtection.DataProtectorExtensions
   fullName: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions
   nameWithType: DataProtectorExtensions
-- uid: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.DecryptProperties(Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,System.Object)
-  name: DecryptProperties(IDataProtector, IConfiguration, Object)
-  href: api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html#Microsoft_AspNetCore_DataProtection_DataProtectorExtensions_DecryptProperties_Microsoft_AspNetCore_DataProtection_IDataProtector_Microsoft_Extensions_Configuration_IConfiguration_System_Object_
-  commentId: M:Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.DecryptProperties(Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,System.Object)
-  fullName: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.DecryptProperties(Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration, System.Object)
-  nameWithType: DataProtectorExtensions.DecryptProperties(IDataProtector, IConfiguration, Object)
-- uid: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.DecryptProperties*
-  name: DecryptProperties
-  href: api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html#Microsoft_AspNetCore_DataProtection_DataProtectorExtensions_DecryptProperties_
-  commentId: Overload:Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.DecryptProperties
+- uid: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.ProtectProperties(Microsoft.AspNetCore.DataProtection.IDataProtector,System.Object)
+  name: ProtectProperties(IDataProtector, Object)
+  href: api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html#Microsoft_AspNetCore_DataProtection_DataProtectorExtensions_ProtectProperties_Microsoft_AspNetCore_DataProtection_IDataProtector_System_Object_
+  commentId: M:Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.ProtectProperties(Microsoft.AspNetCore.DataProtection.IDataProtector,System.Object)
+  fullName: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.ProtectProperties(Microsoft.AspNetCore.DataProtection.IDataProtector, System.Object)
+  nameWithType: DataProtectorExtensions.ProtectProperties(IDataProtector, Object)
+- uid: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.ProtectProperties*
+  name: ProtectProperties
+  href: api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html#Microsoft_AspNetCore_DataProtection_DataProtectorExtensions_ProtectProperties_
+  commentId: Overload:Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.ProtectProperties
   isSpec: "True"
-  fullName: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.DecryptProperties
-  nameWithType: DataProtectorExtensions.DecryptProperties
-- uid: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.EncryptProperties(Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,System.Object)
-  name: EncryptProperties(IDataProtector, IConfiguration, Object)
-  href: api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html#Microsoft_AspNetCore_DataProtection_DataProtectorExtensions_EncryptProperties_Microsoft_AspNetCore_DataProtection_IDataProtector_Microsoft_Extensions_Configuration_IConfiguration_System_Object_
-  commentId: M:Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.EncryptProperties(Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,System.Object)
-  fullName: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.EncryptProperties(Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration, System.Object)
-  nameWithType: DataProtectorExtensions.EncryptProperties(IDataProtector, IConfiguration, Object)
-- uid: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.EncryptProperties*
-  name: EncryptProperties
-  href: api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html#Microsoft_AspNetCore_DataProtection_DataProtectorExtensions_EncryptProperties_
-  commentId: Overload:Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.EncryptProperties
+  fullName: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.ProtectProperties
+  nameWithType: DataProtectorExtensions.ProtectProperties
+- uid: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.UnprotectProperties(Microsoft.AspNetCore.DataProtection.IDataProtector,System.Object)
+  name: UnprotectProperties(IDataProtector, Object)
+  href: api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html#Microsoft_AspNetCore_DataProtection_DataProtectorExtensions_UnprotectProperties_Microsoft_AspNetCore_DataProtection_IDataProtector_System_Object_
+  commentId: M:Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.UnprotectProperties(Microsoft.AspNetCore.DataProtection.IDataProtector,System.Object)
+  fullName: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.UnprotectProperties(Microsoft.AspNetCore.DataProtection.IDataProtector, System.Object)
+  nameWithType: DataProtectorExtensions.UnprotectProperties(IDataProtector, Object)
+- uid: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.UnprotectProperties*
+  name: UnprotectProperties
+  href: api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html#Microsoft_AspNetCore_DataProtection_DataProtectorExtensions_UnprotectProperties_
+  commentId: Overload:Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.UnprotectProperties
   isSpec: "True"
-  fullName: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.EncryptProperties
-  nameWithType: DataProtectorExtensions.EncryptProperties
-- uid: Microsoft.AspNetCore.DataProtection.ProtectedPropertyAttribute
-  name: ProtectedPropertyAttribute
-  href: api/Microsoft.AspNetCore.DataProtection.ProtectedPropertyAttribute.html
-  commentId: T:Microsoft.AspNetCore.DataProtection.ProtectedPropertyAttribute
-  fullName: Microsoft.AspNetCore.DataProtection.ProtectedPropertyAttribute
-  nameWithType: ProtectedPropertyAttribute
+  fullName: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.UnprotectProperties
+  nameWithType: DataProtectorExtensions.UnprotectProperties
