@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.DataProtection;
 using System;
 using System.Diagnostics;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace CG.DataProtection
 {
@@ -53,10 +54,37 @@ namespace CG.DataProtection
                 );
 
             // Get the path to the localappdata folder.
-            var localAppData = Environment.GetEnvironmentVariable(
-                "LOCALAPPDATA"
-                );
+            var localAppData = string.Empty;
 
+            // Are we running windows?
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                localAppData = Environment.GetEnvironmentVariable(
+                    "LOCALAPPDATA"
+                    );
+            }
+
+            // Are we running linux?
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+            {
+                localAppData = Environment.GetEnvironmentVariable("XDG_DATA_HOME") ?? 
+                    Path.Combine(
+                        Environment.GetEnvironmentVariable("HOME"), 
+                            ".local", 
+                            "share"
+                            );
+            }
+
+            // Are we running OSX?
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+            {
+                localAppData = Path.Combine(
+                    Environment.GetEnvironmentVariable("HOME"), 
+                        "Library", 
+                        "Application Support"
+                        );
+            }
+            
             // Create the complete path to any local keys.
             var destFolder = Path.Combine(
                 localAppData,
