@@ -33,6 +33,11 @@ namespace CG.DataProtection
         /// </summary>
         protected IDataProtector Protector { get; }
 
+        /// <summary>
+        /// This property contains the purpose for the data protector.
+        /// </summary>
+        protected string Purpose { get; }
+
         #endregion
 
         // *******************************************************************
@@ -48,10 +53,8 @@ namespace CG.DataProtection
         [DebuggerStepThrough]
         private DataProtector() 
         {
-            // Get the calling application's friendly name.
-            var friendlyName = AppDomain.CurrentDomain.FriendlyNameEx(
-                true
-                );
+            // Use the calling app's name as the top-level purpose name.
+            Purpose = AppDomain.CurrentDomain.FriendlyNameEx(true);
 
             // Get the path to the localappdata folder.
             var localAppData = string.Empty;
@@ -88,16 +91,13 @@ namespace CG.DataProtection
             // Create the complete path to any local keys.
             var destFolder = Path.Combine(
                 localAppData,
-                friendlyName
+                Purpose
                 );
 
             // Create a local provider instance.
             Provider = DataProtectionProvider.Create(
                 new DirectoryInfo(destFolder)
                 );
-
-            // NOTE : we might need to create ctor overloads to deal with 
-            //   advanced scenarios, like key storage in azure, etc.
 
             // Create a local protector instance.
             Protector = Provider.CreateProtector(
@@ -161,7 +161,13 @@ namespace CG.DataProtection
             Guard.Instance().ThrowIfNullOrEmpty(purpose, nameof(purpose));
 
             // Defer to the local provider.
-            return Provider.CreateProtector(purpose);
+            var result = Provider.CreateProtector(
+                Purpose, 
+                purpose
+                );
+
+            // Return the result.
+            return result;
         }
 
         #endregion
