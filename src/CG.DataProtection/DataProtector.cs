@@ -96,8 +96,12 @@ namespace CG.DataProtection
 
             // Create a local provider instance.
             Provider = DataProtectionProvider.Create(
-                new DirectoryInfo(destFolder)
-                );
+                new DirectoryInfo(destFolder),
+                options =>
+                {
+                    options.SetDefaultKeyLifetime(TimeSpan.MaxValue);
+                    options.SetApplicationName(Purpose);
+                });
 
             // Create a local protector instance.
             Protector = Provider.CreateProtector(
