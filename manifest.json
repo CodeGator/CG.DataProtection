@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.DataProtection.DataProtector.html",
-          "hash": "QQcf8gFlTGd1uEWX60UChiImqx/8jKdeoTcbTLE+YK0="
+          "hash": "hDOrfPD+jVd6DfEU32DgqmMwHZ7YdZtH75og1GOob0Y="
         }
       },
       "is_incremental": false,
@@ -30,19 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.DataProtection.ProtectedPropertyAttribute.html",
-          "hash": "lNmPnx/iMheZwV16F9voAPnXddV2x233Xtc7ZAPKX4Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataProtection.ServiceCollectionExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataProtection.ServiceCollectionExtensions.html",
-          "hash": "IByih5CW+s97vq+9A5SR41WtpKtlrD3Bj/I9DITvd6A="
+          "hash": "fxKjGQCtK43zlpIdOjghS82+sR/hK53WcXXYAMKWZAI="
         }
       },
       "is_incremental": false,
@@ -54,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.DataProtection.html",
-          "hash": "bKPoz/1bPa9MTzXlfL5CvajrNxmkU3lgk0rClni7Ce4="
+          "hash": "dECUWVT15GkQB93n/W0c0LK6m1AgxqWuPJvpjJH1R9Q="
         }
       },
       "is_incremental": false,
@@ -66,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html",
-          "hash": "WVrVmPs8L8eQnMbz8g+QfpXF6sahOAOqIeBzyrod9qw="
+          "hash": "ndrFnHx5ShG4cmlFhwCVL18L1ilqSywMl/EfTGa6AgE="
         }
       },
       "is_incremental": false,
@@ -78,7 +66,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.DataProtection.html",
-          "hash": "5f60Vv2trR6S112m5z2fYt2VXX7YoOllXuyj3SlQGEs="
+          "hash": "4Sh+s45JdaYpIFvkjgrTz/AIz6gxNtzF59MOadsUUrc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.html",
+          "hash": "QvWa2NV6zQ+M73wtQo34hjg7hAPd4E9uSFZBh3UdFzc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.html",
+          "hash": "Z6FerWZTChNsmfhE1NV1OZk/oHy3STDGm2SBnu27Gxk="
         }
       },
       "is_incremental": false,
@@ -90,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "8VPvtZqj4WkZutmIwKuZ44AF7e6OPIdLSP3KZ6q6AdI="
+          "hash": "2UNeI9D0zcX/KAsmPGmEokzCKVae+pgqK0WOSJrGNCw="
         }
       },
       "is_incremental": false,
@@ -102,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "dajSEgtAs/v7CK5L21qL4vHgTdyUv0J7McsQOIiZpLA="
+          "hash": "gcp1JB3/cLklcT+72krfnba+6CuoFkaQtheZ9cEBdjQ="
         }
       },
       "is_incremental": false,
@@ -170,7 +182,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "7vYSQUir1NgpwM7M1ajKABIG76/VhFtA6DhI+IuPDDY="
+          "hash": "szuW+byvgLmrGz9lv22P67c3tK1YcZH5VyCRxU9VV5A="
         }
       },
       "is_incremental": false,
@@ -209,7 +221,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 6,
+          "total_file_count": 7,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -68,6 +68,19 @@ references:
   isSpec: "True"
   fullName: CG.DataProtection.DataProtector.Provider
   nameWithType: DataProtector.Provider
+- uid: CG.DataProtection.DataProtector.Purpose
+  name: Purpose
+  href: api/CG.DataProtection.DataProtector.html#CG_DataProtection_DataProtector_Purpose
+  commentId: P:CG.DataProtection.DataProtector.Purpose
+  fullName: CG.DataProtection.DataProtector.Purpose
+  nameWithType: DataProtector.Purpose
+- uid: CG.DataProtection.DataProtector.Purpose*
+  name: Purpose
+  href: api/CG.DataProtection.DataProtector.html#CG_DataProtection_DataProtector_Purpose_
+  commentId: Overload:CG.DataProtection.DataProtector.Purpose
+  isSpec: "True"
+  fullName: CG.DataProtection.DataProtector.Purpose
+  nameWithType: DataProtector.Purpose
 - uid: CG.DataProtection.DataProtector.Unprotect(System.Byte[])
   name: Unprotect(Byte[])
   href: api/CG.DataProtection.DataProtector.html#CG_DataProtection_DataProtector_Unprotect_System_Byte___
@@ -90,37 +103,6 @@ references:
   commentId: T:CG.DataProtection.ProtectedPropertyAttribute
   fullName: CG.DataProtection.ProtectedPropertyAttribute
   nameWithType: ProtectedPropertyAttribute
-- uid: CG.DataProtection.ServiceCollectionExtensions
-  name: ServiceCollectionExtensions
-  href: api/CG.DataProtection.ServiceCollectionExtensions.html
-  commentId: T:CG.DataProtection.ServiceCollectionExtensions
-  fullName: CG.DataProtection.ServiceCollectionExtensions
-  nameWithType: ServiceCollectionExtensions
-- uid: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions*
-  name: TryConfigureOptions
-  href: api/CG.DataProtection.ServiceCollectionExtensions.html#CG_DataProtection_ServiceCollectionExtensions_TryConfigureOptions_
-  commentId: Overload:CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions
-  isSpec: "True"
-  fullName: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions
-  nameWithType: ServiceCollectionExtensions.TryConfigureOptions
-- uid: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration)
-  name: TryConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration)
-  href: api/CG.DataProtection.ServiceCollectionExtensions.html#CG_DataProtection_ServiceCollectionExtensions_TryConfigureOptions__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_AspNetCore_DataProtection_IDataProtector_Microsoft_Extensions_Configuration_IConfiguration_
-  commentId: M:CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration)
-  name.vb: TryConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration)
-  fullName: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration)
-  fullName.vb: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration)
-  nameWithType: ServiceCollectionExtensions.TryConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration)
-  nameWithType.vb: ServiceCollectionExtensions.TryConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration)
-- uid: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,``0@)
-  name: TryConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration, out TOptions)
-  href: api/CG.DataProtection.ServiceCollectionExtensions.html#CG_DataProtection_ServiceCollectionExtensions_TryConfigureOptions__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_AspNetCore_DataProtection_IDataProtector_Microsoft_Extensions_Configuration_IConfiguration___0__
-  commentId: M:CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,``0@)
-  name.vb: TryConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration, ByRef TOptions)
-  fullName: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration, out TOptions)
-  fullName.vb: CG.DataProtection.ServiceCollectionExtensions.TryConfigureOptions(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration, ByRef TOptions)
-  nameWithType: ServiceCollectionExtensions.TryConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration, out TOptions)
-  nameWithType.vb: ServiceCollectionExtensions.TryConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration, ByRef TOptions)
 - uid: Microsoft.AspNetCore.DataProtection
   name: Microsoft.AspNetCore.DataProtection
   href: api/Microsoft.AspNetCore.DataProtection.html
@@ -159,3 +141,92 @@ references:
   isSpec: "True"
   fullName: Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.UnprotectProperties
   nameWithType: DataProtectorExtensions.UnprotectProperties
+- uid: Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  href: api/Microsoft.Extensions.DependencyInjection.html
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+- uid: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions
+  name: DataProtectionServiceCollectionExtensions
+  href: api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.html
+  commentId: T:Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions
+  nameWithType: DataProtectionServiceCollectionExtensions
+- uid: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.ConfigureOptions*
+  name: ConfigureOptions
+  href: api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_DataProtectionServiceCollectionExtensions_ConfigureOptions_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.ConfigureOptions
+  isSpec: "True"
+  fullName: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.ConfigureOptions
+  nameWithType: DataProtectionServiceCollectionExtensions.ConfigureOptions
+- uid: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.ConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration)
+  name: ConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration)
+  href: api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_DataProtectionServiceCollectionExtensions_ConfigureOptions__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_AspNetCore_DataProtection_IDataProtector_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.ConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: ConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration)
+  fullName: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.ConfigureOptions<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.ConfigureOptions(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: DataProtectionServiceCollectionExtensions.ConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration)
+  nameWithType.vb: DataProtectionServiceCollectionExtensions.ConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration)
+- uid: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.ConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,``0@)
+  name: ConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration, out TOptions)
+  href: api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_DataProtectionServiceCollectionExtensions_ConfigureOptions__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_AspNetCore_DataProtection_IDataProtector_Microsoft_Extensions_Configuration_IConfiguration___0__
+  commentId: M:Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.ConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,``0@)
+  name.vb: ConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration, ByRef TOptions)
+  fullName: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.ConfigureOptions<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration, out TOptions)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.ConfigureOptions(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration, ByRef TOptions)
+  nameWithType: DataProtectionServiceCollectionExtensions.ConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration, out TOptions)
+  nameWithType.vb: DataProtectionServiceCollectionExtensions.ConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration, ByRef TOptions)
+- uid: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions*
+  name: TryConfigureOptions
+  href: api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_DataProtectionServiceCollectionExtensions_TryConfigureOptions_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions
+  isSpec: "True"
+  fullName: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions
+  nameWithType: DataProtectionServiceCollectionExtensions.TryConfigureOptions
+- uid: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration)
+  name: TryConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration)
+  href: api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_DataProtectionServiceCollectionExtensions_TryConfigureOptions__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_AspNetCore_DataProtection_IDataProtector_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: TryConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration)
+  fullName: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: DataProtectionServiceCollectionExtensions.TryConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration)
+  nameWithType.vb: DataProtectionServiceCollectionExtensions.TryConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration)
+- uid: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,``0@)
+  name: TryConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration, out TOptions)
+  href: api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_DataProtectionServiceCollectionExtensions_TryConfigureOptions__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_AspNetCore_DataProtection_IDataProtector_Microsoft_Extensions_Configuration_IConfiguration___0__
+  commentId: M:Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,``0@)
+  name.vb: TryConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration, ByRef TOptions)
+  fullName: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration, out TOptions)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration, ByRef TOptions)
+  nameWithType: DataProtectionServiceCollectionExtensions.TryConfigureOptions<TOptions>(IServiceCollection, IDataProtector, IConfiguration, out TOptions)
+  nameWithType.vb: DataProtectionServiceCollectionExtensions.TryConfigureOptions(Of TOptions)(IServiceCollection, IDataProtector, IConfiguration, ByRef TOptions)
+- uid: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,``1)
+  name: TryConfigureOptions<TOptions, TImplementation>(IServiceCollection, IDataProtector, TImplementation)
+  href: api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_DataProtectionServiceCollectionExtensions_TryConfigureOptions__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_AspNetCore_DataProtection_IDataProtector___1_
+  commentId: M:Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,``1)
+  name.vb: TryConfigureOptions(Of TOptions, TImplementation)(IServiceCollection, IDataProtector, TImplementation)
+  fullName: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions<TOptions, TImplementation>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, TImplementation)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions(Of TOptions, TImplementation)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, TImplementation)
+  nameWithType: DataProtectionServiceCollectionExtensions.TryConfigureOptions<TOptions, TImplementation>(IServiceCollection, IDataProtector, TImplementation)
+  nameWithType.vb: DataProtectionServiceCollectionExtensions.TryConfigureOptions(Of TOptions, TImplementation)(IServiceCollection, IDataProtector, TImplementation)
+- uid: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration)
+  name: TryConfigureOptions<TOptions, TImplementation>(IServiceCollection, IDataProtector, IConfiguration)
+  href: api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_DataProtectionServiceCollectionExtensions_TryConfigureOptions__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_AspNetCore_DataProtection_IDataProtector_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: TryConfigureOptions(Of TOptions, TImplementation)(IServiceCollection, IDataProtector, IConfiguration)
+  fullName: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions<TOptions, TImplementation>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions(Of TOptions, TImplementation)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: DataProtectionServiceCollectionExtensions.TryConfigureOptions<TOptions, TImplementation>(IServiceCollection, IDataProtector, IConfiguration)
+  nameWithType.vb: DataProtectionServiceCollectionExtensions.TryConfigureOptions(Of TOptions, TImplementation)(IServiceCollection, IDataProtector, IConfiguration)
+- uid: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,``1@)
+  name: TryConfigureOptions<TOptions, TImplementation>(IServiceCollection, IDataProtector, IConfiguration, out TImplementation)
+  href: api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_DataProtectionServiceCollectionExtensions_TryConfigureOptions__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_AspNetCore_DataProtection_IDataProtector_Microsoft_Extensions_Configuration_IConfiguration___1__
+  commentId: M:Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.DataProtection.IDataProtector,Microsoft.Extensions.Configuration.IConfiguration,``1@)
+  name.vb: TryConfigureOptions(Of TOptions, TImplementation)(IServiceCollection, IDataProtector, IConfiguration, ByRef TImplementation)
+  fullName: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions<TOptions, TImplementation>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration, out TImplementation)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.TryConfigureOptions(Of TOptions, TImplementation)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.AspNetCore.DataProtection.IDataProtector, Microsoft.Extensions.Configuration.IConfiguration, ByRef TImplementation)
+  nameWithType: DataProtectionServiceCollectionExtensions.TryConfigureOptions<TOptions, TImplementation>(IServiceCollection, IDataProtector, IConfiguration, out TImplementation)
+  nameWithType.vb: DataProtectionServiceCollectionExtensions.TryConfigureOptions(Of TOptions, TImplementation)(IServiceCollection, IDataProtector, IConfiguration, ByRef TImplementation)
