@@ -11,23 +11,21 @@ namespace CG.DataProtection.QuickStart
 
         [ProtectedProperty]
         public string B { get; set; }
+
+        [ProtectedProperty(Optional = true)]
+        public string C { get; set; }
     }
 
     class Program
     {
         static void Main(string[] args)
         {
-            // Standard config stuff .NET does for us.
-            var builder = new ConfigurationBuilder();
-            builder.AddJsonFile("appsettings.json");
-            var configuration = builder.Build();
-
-            // Standard config binding stuff .NET does for us.
-            var options = new TestOptions();
-            configuration.Bind(options);
-
-            // OK, now to demonstrate:
-
+            var options = new TestOptions()
+            {
+                A = "secret 1",
+                B = "secret 2",
+                C = "secret 3"
+            };
 
             // Example: Protect any decorated property values.
             DataProtector.Instance().ProtectProperties(options);
@@ -37,17 +35,24 @@ namespace CG.DataProtection.QuickStart
 
             // Notice that we protected the decorated property.
             Console.WriteLine($"property B is: {options.B}");
-            
+
+            // Notice that we protected the decorated property.
+            Console.WriteLine($"property C is: {options.C}");
+
+            // Let's unprotect C, since it's optional.
+            options.C = "plain text secret";
+
             // Example: Unprotect any protected properties.
             DataProtector.Instance().UnprotectProperties(options);
 
             // Notice that we never touched the non-decorated property.
             Console.WriteLine($"property A is: {options.A}");
 
-            // Notice that we protected the decorated property.
+            // Notice that we unprotected the decorated property.
             Console.WriteLine($"property B is: {options.B}");
 
-
+            // Notice that we the optional property, since it held plain text.
+            Console.WriteLine($"property C is: {options.C}");
 
             // We're done!
             Console.WriteLine("Done - press any key to exit");

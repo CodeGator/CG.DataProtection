@@ -99,7 +99,9 @@ namespace CG.DataProtection
                 new DirectoryInfo(destFolder),
                 options =>
                 {
-                    options.SetDefaultKeyLifetime(TimeSpan.MaxValue);
+                    options.SetDefaultKeyLifetime(
+                        TimeSpan.MaxValue.Subtract(TimeSpan.FromDays(1))
+                        );
                     options.SetApplicationName(Purpose);
                 });
 

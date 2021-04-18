@@ -4,6 +4,7 @@ using CG.DataProtection.Properties;
 using CG.Validations;
 using System;
 using System.Linq;
+using System.Security.Cryptography;
 
 namespace Microsoft.AspNetCore.DataProtection
 {
@@ -240,16 +241,27 @@ namespace Microsoft.AspNetCore.DataProtection
                         // Check for empty strings first ...
                         if (!string.IsNullOrEmpty(encryptedPropertyValue))
                         {
-                            // Unprotect the value.
-                            var unprotectedPropertyValue = dataProtector.Unprotect(
-                                encryptedPropertyValue
-                                );
+                            try
+                            {
+                                // Unprotect the value.
+                                var unprotectedPropertyValue = dataProtector.Unprotect(
+                                    encryptedPropertyValue
+                                    );
 
-                            // Write the unprotected string to the original property.
-                            prop.GetSetMethod().Invoke(
-                                options,
-                                new[] { unprotectedPropertyValue }
-                                );
+                                // Write the unprotected string to the original property.
+                                prop.GetSetMethod().Invoke(
+                                    options,
+                                    new[] { unprotectedPropertyValue }
+                                    );
+                            }
+                            catch (CryptographicException ex)
+                            {
+                                // Is the encryption manditory?
+                                if (false == attr.Optional)
+                                {
+                                    throw;
+                                }
+                            }
                         }
                     }
                 }
