@@ -1,9 +1,9 @@
 # CG.DataProtection: 
 ---
-[![Build Status](https://dev.azure.com/codegator/CG.DataProtection/_apis/build/status/CodeGator.CG.DataProtection?branchName=master)](https://dev.azure.com/codegator/CG.DataProtection/_build/latest?definitionId=21&branchName=master)
+[![Build Status](https://dev.azure.com/codegator/CG.DataProtection/_apis/build/status/CodeGator.CG.DataProtection?branchName=main)](https://dev.azure.com/codegator/CG.DataProtection/_build/latest?definitionId=45&branchName=main)
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.DataProtection/index.html)
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.DataProtection.svg?style=flat)](https://nuget.org/packages/CG.DataProtection)
-![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.DataProtection/21)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.DataProtection/45)
 [![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.DataProtection/discussions)
 
 #### What does it do?

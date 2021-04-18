@@ -53,8 +53,8 @@ namespace CG.DataProtection
         [DebuggerStepThrough]
         private DataProtector() 
         {
-            // Use the calling app's name as the top-level purpose name.
-            Purpose = AppDomain.CurrentDomain.FriendlyNameEx(true);
+            // Use a unique guid for the purpose.
+            Purpose = "1A4DF30A-28F2-49A8-8324-F0118A671B6A";
 
             // Get the path to the localappdata folder.
             var localAppData = string.Empty;
