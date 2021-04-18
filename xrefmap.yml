@@ -103,6 +103,19 @@ references:
   commentId: T:CG.DataProtection.ProtectedPropertyAttribute
   fullName: CG.DataProtection.ProtectedPropertyAttribute
   nameWithType: ProtectedPropertyAttribute
+- uid: CG.DataProtection.ProtectedPropertyAttribute.Optional
+  name: Optional
+  href: api/CG.DataProtection.ProtectedPropertyAttribute.html#CG_DataProtection_ProtectedPropertyAttribute_Optional
+  commentId: P:CG.DataProtection.ProtectedPropertyAttribute.Optional
+  fullName: CG.DataProtection.ProtectedPropertyAttribute.Optional
+  nameWithType: ProtectedPropertyAttribute.Optional
+- uid: CG.DataProtection.ProtectedPropertyAttribute.Optional*
+  name: Optional
+  href: api/CG.DataProtection.ProtectedPropertyAttribute.html#CG_DataProtection_ProtectedPropertyAttribute_Optional_
+  commentId: Overload:CG.DataProtection.ProtectedPropertyAttribute.Optional
+  isSpec: "True"
+  fullName: CG.DataProtection.ProtectedPropertyAttribute.Optional
+  nameWithType: ProtectedPropertyAttribute.Optional
 - uid: Microsoft.AspNetCore.DataProtection
   name: Microsoft.AspNetCore.DataProtection
   href: api/Microsoft.AspNetCore.DataProtection.html
