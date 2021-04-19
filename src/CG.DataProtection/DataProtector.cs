@@ -50,7 +50,7 @@ namespace CG.DataProtection
         /// This constructor creates a new instance of the <see cref="DataProtector"/>
         /// class.
         /// </summary>
-        [DebuggerStepThrough]
+        //[DebuggerStepThrough]
         private DataProtector() 
         {
             // Use a unique guid for the purpose.

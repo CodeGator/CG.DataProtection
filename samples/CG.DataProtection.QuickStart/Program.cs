@@ -39,7 +39,7 @@ namespace CG.DataProtection.QuickStart
             // Notice that we protected the decorated property.
             Console.WriteLine($"property C is: {options.C}");
 
-            // Let's unprotect C, since it's optional.
+            // Let's unprotect C, to demonstrate the 'optional' feature.
             options.C = "plain text secret";
 
             // Example: Unprotect any protected properties.

@@ -259,7 +259,11 @@ namespace Microsoft.AspNetCore.DataProtection
                                 // Is the encryption manditory?
                                 if (false == attr.Optional)
                                 {
-                                    throw;
+                                    // Was it not a decryption failure?
+                                    if ("An error occurred during a cryptographic operation." != ex.Message)
+                                    {
+                                        throw;
+                                    }                                    
                                 }
                             }
                         }
