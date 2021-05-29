@@ -116,6 +116,38 @@ references:
   isSpec: "True"
   fullName: CG.DataProtection.ProtectedPropertyAttribute.Optional
   nameWithType: ProtectedPropertyAttribute.Optional
+- uid: CG.DataProtection.RijndaelProtector
+  name: RijndaelProtector
+  href: api/CG.DataProtection.RijndaelProtector.html
+  commentId: T:CG.DataProtection.RijndaelProtector
+  fullName: CG.DataProtection.RijndaelProtector
+  nameWithType: RijndaelProtector
+- uid: CG.DataProtection.RijndaelProtector.Protect(System.String,System.String,System.String)
+  name: Protect(String, String, String)
+  href: api/CG.DataProtection.RijndaelProtector.html#CG_DataProtection_RijndaelProtector_Protect_System_String_System_String_System_String_
+  commentId: M:CG.DataProtection.RijndaelProtector.Protect(System.String,System.String,System.String)
+  fullName: CG.DataProtection.RijndaelProtector.Protect(System.String, System.String, System.String)
+  nameWithType: RijndaelProtector.Protect(String, String, String)
+- uid: CG.DataProtection.RijndaelProtector.Protect*
+  name: Protect
+  href: api/CG.DataProtection.RijndaelProtector.html#CG_DataProtection_RijndaelProtector_Protect_
+  commentId: Overload:CG.DataProtection.RijndaelProtector.Protect
+  isSpec: "True"
+  fullName: CG.DataProtection.RijndaelProtector.Protect
+  nameWithType: RijndaelProtector.Protect
+- uid: CG.DataProtection.RijndaelProtector.Unprotect(System.String,System.String,System.String)
+  name: Unprotect(String, String, String)
+  href: api/CG.DataProtection.RijndaelProtector.html#CG_DataProtection_RijndaelProtector_Unprotect_System_String_System_String_System_String_
+  commentId: M:CG.DataProtection.RijndaelProtector.Unprotect(System.String,System.String,System.String)
+  fullName: CG.DataProtection.RijndaelProtector.Unprotect(System.String, System.String, System.String)
+  nameWithType: RijndaelProtector.Unprotect(String, String, String)
+- uid: CG.DataProtection.RijndaelProtector.Unprotect*
+  name: Unprotect
+  href: api/CG.DataProtection.RijndaelProtector.html#CG_DataProtection_RijndaelProtector_Unprotect_
+  commentId: Overload:CG.DataProtection.RijndaelProtector.Unprotect
+  isSpec: "True"
+  fullName: CG.DataProtection.RijndaelProtector.Unprotect
+  nameWithType: RijndaelProtector.Unprotect
 - uid: Microsoft.AspNetCore.DataProtection
   name: Microsoft.AspNetCore.DataProtection
   href: api/Microsoft.AspNetCore.DataProtection.html
