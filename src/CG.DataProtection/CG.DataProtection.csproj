@@ -17,6 +17,7 @@ Platforms supported:
     <Authors>Martin Cook</Authors>
     <Company>CodeGator</Company>
     <PackageIcon>packageDefaultIcon-50x50.png</PackageIcon>
+    <PackageIconUrl />
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -24,12 +25,12 @@ Platforms supported:
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CG.Core" Version="2021.2.7" />
-    <PackageReference Include="CG.DependencyInjection" Version="2021.2.5" />
-    <PackageReference Include="CG.Options" Version="2021.4.8" />
-    <PackageReference Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="5.0.5" />
-    <PackageReference Include="Microsoft.AspNetCore.DataProtection.Extensions" Version="5.0.5" />
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.194">
+    <PackageReference Include="CG.Core" Version="2021.2.9" />
+    <PackageReference Include="CG.DependencyInjection" Version="2021.2.7" />
+    <PackageReference Include="CG.Options" Version="2021.4.11" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="5.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.Extensions" Version="5.0.6" />
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.203">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
