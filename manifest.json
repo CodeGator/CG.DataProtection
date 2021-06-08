@@ -13,114 +13,6 @@
       "is_incremental": false
     },
     {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataProtection.DataProtector.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataProtection.DataProtector.html",
-          "hash": "HnDmo3ldb18Yo0+I6TzyZdEtLVD7nQ4sn0ruclrl1ro="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataProtection.ProtectedPropertyAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataProtection.ProtectedPropertyAttribute.html",
-          "hash": "WQMlCrN+EOfjxP9cQ5Kbk5noWxZ8SRVOhJzdmKd4VwY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataProtection.RijndaelProtector.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataProtection.RijndaelProtector.html",
-          "hash": "eRAgw3LzddF5DZnux0gzNRiZadpHgWvn5wRgGKHaq8E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataProtection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataProtection.html",
-          "hash": "2QTh8BXaJJ3EwbB2Lj/eT2gWONIfLTpuZfpZSu1j5eQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html",
-          "hash": "SPB+/rsdgv6qFQelZ3KCdilGqcMzkAPwOo64/KN8ZR8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.AspNetCore.DataProtection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AspNetCore.DataProtection.html",
-          "hash": "OcDBGBPGMwSgwnPJioO5maWZqduqrfR3x05Rd2NiS0U="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.html",
-          "hash": "3VzQ0USVplOpr9HrjX8T2vo06jrdPRYzaU38KdBAy7M="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Extensions.DependencyInjection.html",
-          "hash": "2bHJ7pb00GqRwWs8tlQI89O1KJ6Hi8itymQS7b1s5w0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "NbGEeH9uCwYMIMqqdbAsgm2NB7rP9jICauD+7svIIFo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "articles/intro.md",
       "output": {
@@ -206,7 +98,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "Q6qN9hVte5JKIxR1+h/+0lOwXkkptfjOul0rhp4m/ZY="
+          "hash": "2Jdl1noxiOONmk0E+DlUZ00qNeGsf7v3atsjEJPWG5I="
         }
       },
       "is_incremental": false,
@@ -228,12 +120,6 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 8,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
