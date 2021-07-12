@@ -5,6 +5,7 @@
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.DataProtection.svg?style=flat)](https://nuget.org/packages/CG.DataProtection)
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.DataProtection/45)
 [![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.DataProtection/discussions)
+[![CG.DataProtection on fuget.org](https://www.fuget.org/packages/CG.DataProtection/badge.svg)](https://www.fuget.org/packages/CG.DataProtection)
 
 #### What does it do?
 The package defines data protection extensions used by other CodeGator packages. 
@@ -23,6 +24,8 @@ PM> Install-Package CG.DataProtection
 
 #### How do I contact you?
 If you've spotted a bug in the code please use the project Issues [HERE](https://github.com/CodeGator/CG.DataProtection/issues)
+
+We have a discussion group [HERE](https://github.com/CodeGator/CG.DataProtection/discussions)
 
 #### Is there any documentation?
 There is developer documentation [HERE](https://codegator.github.io/CG.DataProtection/)
