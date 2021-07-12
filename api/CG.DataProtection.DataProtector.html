@@ -1,0 +1,394 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DataProtector
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DataProtector
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CG.DataProtection.DataProtector">
+  
+  
+  <h1 id="CG_DataProtection_DataProtector" data-uid="CG.DataProtection.DataProtector" class="text-break">Class DataProtector
+  </h1>
+  <div class="markdown level0 summary"><p>This class is a singleton implementation of the <span class="xref">Microsoft.AspNetCore.DataProtection.IDataProtector</span>
+interface.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CG.SingletonBase</span>&lt;<a class="xref" href="CG.DataProtection.DataProtector.html">DataProtector</a>&gt;</div>
+    <div class="level2"><span class="xref">DataProtector</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Microsoft.AspNetCore.DataProtection.IDataProtector</span></div>
+    <div><span class="xref">Microsoft.AspNetCore.DataProtection.IDataProtectionProvider</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">CG.SingletonBase&lt;CG.DataProtection.DataProtector&gt;._instance</span>
+    </div>
+    <div>
+      <span class="xref">CG.SingletonBase&lt;CG.DataProtection.DataProtector&gt;.Instance()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.DataProtection.html">CG.DataProtection</a></h6>
+  <h6><strong>Assembly</strong>: CG.DataProtection.dll</h6>
+  <h5 id="CG_DataProtection_DataProtector_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DataProtector : SingletonBase&lt;DataProtector&gt;, IDataProtector, IDataProtectionProvider</code></pre>
+  </div>
+  <h5 id="CG_DataProtection_DataProtector_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Use this class in non-DI environments, and/or, for local data protection
+scenarios.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="CG_DataProtection_DataProtector_Protector_" data-uid="CG.DataProtection.DataProtector.Protector*"></a>
+  <h4 id="CG_DataProtection_DataProtector_Protector" data-uid="CG.DataProtection.DataProtector.Protector">Protector</h4>
+  <div class="markdown level1 summary"><p>This property contains a reference to a local data protector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IDataProtector Protector { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.DataProtection.IDataProtector</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_DataProtection_DataProtector_Provider_" data-uid="CG.DataProtection.DataProtector.Provider*"></a>
+  <h4 id="CG_DataProtection_DataProtector_Provider" data-uid="CG.DataProtection.DataProtector.Provider">Provider</h4>
+  <div class="markdown level1 summary"><p>This property contains a reference to a local data protection provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IDataProtectionProvider Provider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.DataProtection.IDataProtectionProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_DataProtection_DataProtector_Purpose_" data-uid="CG.DataProtection.DataProtector.Purpose*"></a>
+  <h4 id="CG_DataProtection_DataProtector_Purpose" data-uid="CG.DataProtection.DataProtector.Purpose">Purpose</h4>
+  <div class="markdown level1 summary"><p>This property contains the purpose for the data protector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string Purpose { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="CG_DataProtection_DataProtector_CreateProtector_" data-uid="CG.DataProtection.DataProtector.CreateProtector*"></a>
+  <h4 id="CG_DataProtection_DataProtector_CreateProtector_System_String_" data-uid="CG.DataProtection.DataProtector.CreateProtector(System.String)">CreateProtector(String)</h4>
+  <div class="markdown level1 summary"><p>This method creates an <span class="xref">Microsoft.AspNetCore.DataProtection.IDataProtector</span> for a given
+purpose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDataProtector CreateProtector(string purpose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">purpose</span></td>
+        <td><p>The purpose to be assigned to the newly-created
+<span class="xref">Microsoft.AspNetCore.DataProtection.IDataProtector</span> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.DataProtection.IDataProtector</span></td>
+        <td><p>An <span class="xref">Microsoft.AspNetCore.DataProtection.IDataProtector</span> tied to the provided purpose.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_DataProtection_DataProtector_Protect_" data-uid="CG.DataProtection.DataProtector.Protect*"></a>
+  <h4 id="CG_DataProtection_DataProtector_Protect_System_Byte___" data-uid="CG.DataProtection.DataProtector.Protect(System.Byte[])">Protect(Byte[])</h4>
+  <div class="markdown level1 summary"><p>This method cryptographically protects a piece of plaintext data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] Protect(byte[] plaintext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">plaintext</span></td>
+        <td><p>The plaintext string to protect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>The protected form of the plaintext data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_DataProtection_DataProtector_Unprotect_" data-uid="CG.DataProtection.DataProtector.Unprotect*"></a>
+  <h4 id="CG_DataProtection_DataProtector_Unprotect_System_Byte___" data-uid="CG.DataProtection.DataProtector.Unprotect(System.Byte[])">Unprotect(Byte[])</h4>
+  <div class="markdown level1 summary"><p>This method cryptographically unprotects a piece of protected data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] Unprotect(byte[] protectedData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">protectedData</span></td>
+        <td><p>The protected data to unprotect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>The plaintext form of the protected data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.DataProtection.IDataProtector</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.DataProtection.IDataProtectionProvider</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html#Microsoft_AspNetCore_DataProtection_DataProtectorExtensions_ProtectProperties_Microsoft_AspNetCore_DataProtection_IDataProtector_System_Object_">DataProtectorExtensions.ProtectProperties(IDataProtector, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html#Microsoft_AspNetCore_DataProtection_DataProtectorExtensions_UnprotectProperties_Microsoft_AspNetCore_DataProtection_IDataProtector_System_Object_">DataProtectorExtensions.UnprotectProperties(IDataProtector, Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
