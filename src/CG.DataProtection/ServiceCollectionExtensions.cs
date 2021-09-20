@@ -12,10 +12,9 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// This class contains extension methods related to the <see cref="IServiceCollection"/>
-    /// type, for registering types from the <see cref="CG.DataProtection"/>
-    /// library.
+    /// type.
     /// </summary>
-    public static partial class DataProtectionServiceCollectionExtensions
+    public static partial class ServiceCollectionExtensions
     {
         // *******************************************************************
         // Public methods.
