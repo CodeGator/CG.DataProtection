@@ -26,8 +26,8 @@ Platforms supported:
 
   <ItemGroup>
     <PackageReference Include="CG.Core" Version="2021.3.3" />
-    <PackageReference Include="CG.DependencyInjection" Version="2021.3.1" />
-    <PackageReference Include="CG.Options" Version="2021.5.1" />
+    <PackageReference Include="CG.DependencyInjection" Version="2021.3.2" />
+    <PackageReference Include="CG.Options" Version="2021.5.2" />
     <PackageReference Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="5.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.DataProtection.Extensions" Version="5.0.10" />
     <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.231">
