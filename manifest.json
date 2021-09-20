@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.DataProtection.DataProtector.html",
-          "hash": "PkpZIW9igIzbMnNUrbShVedxzxDEaCdcCzua57ODeOg="
+          "hash": "vajEaqe+/9d8nkoNfqyoMHjQRv1qEatzBEoxOyQ9gnc="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.DataProtection.ProtectedPropertyAttribute.html",
-          "hash": "EC71mQKDaU5eI7S3+TrNOUUsKCerAoT+6aF4svl+cfY="
+          "hash": "IfeKQ6dAspsB1wiYWyyE27Q3jSi5u/TIPojH8cqcpd0="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.DataProtection.RijndaelProtector.html",
-          "hash": "xeQgeK9GhE1/U9vhOl2nIXrd5+CyVA4NFR5wP2sx6PU="
+          "hash": "hBdL5LH3omKgsGO1bUycB30elIg+8kokxgoZy+V/Ovo="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.DataProtection.html",
-          "hash": "QuK4EmobQkXgAnHD05MtlQ7C3fXY60M80waQ13/l2Pc="
+          "hash": "fQbNp6lfVa20+ONNkWgZUFikqjCz17ZGUU5DTIZKSmA="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html",
-          "hash": "FU6kIJIyb3XOq0C69t0MlLSQNxtuY9dziFK40BScsfs="
+          "hash": "ooc1OIvAoQwbDvgTXZvIH7/rM5mbvUsOW26JAOQkK/Q="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.DataProtection.html",
-          "hash": "s0O2TCbelTWq1Avo4JJ1lTXHCvjq/Q4oKqe+lfwR5vY="
+          "hash": "ISGX7VmwUFhRTh0P/P+jH2/SC/jpum67+FN+gVnyh3o="
         }
       },
       "is_incremental": false,
@@ -86,11 +86,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.yml",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.html",
-          "hash": "IpVtSxIxBOWUN+miEubYWIzgMBgsxWyK8cvpgzzbf58="
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html",
+          "hash": "Lm+qbNL3sfUARr85fJJSDCiZ5y4fpVpvJQMleIeNkYA="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.html",
-          "hash": "f0QfnbhDyNb32PfLgbFvSrcHkHS9Tdrwdqs3MSV1G9s="
+          "hash": "rhpQcusJoq9UxhRa+NQgCtSob/A6AVXSTvftgWArnQY="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "NbGEeH9uCwYMIMqqdbAsgm2NB7rP9jICauD+7svIIFo="
+          "hash": "NCNrLqeq5zCgH15kFe993r8YwLm/8U/yaM9f+UjCyd4="
         }
       },
       "is_incremental": false,
@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "3lFGsZn+vpYCWz7OututIOBGsz91XMn2mjINvNxc584="
+          "hash": "vaq84zuBDKDfPsrosudT6z8YwxF5I5sh5cT7i0RAoco="
         }
       },
       "is_incremental": false,
@@ -194,7 +194,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "XHZ82o+bvGQ+okFD3DtItsGMFvvQV1vrRr8JG0EZ67w="
+          "hash": "OUkNLXNxNauaehdcZJUvL89CjPCYt7e+bFCTzfJkafw="
         }
       },
       "is_incremental": false,
