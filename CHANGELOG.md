@@ -1,6 +1,12 @@
 # CG.DataProtection change log
 ---
 
+## 2022.1
+
+* I switched the runtime to .net 6.0
+
+* I added the AesProtector type.
+
 ## 2021.2
 
 * bug fixes

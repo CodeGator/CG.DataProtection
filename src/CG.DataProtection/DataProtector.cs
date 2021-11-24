@@ -50,7 +50,7 @@ namespace CG.DataProtection
         /// This constructor creates a new instance of the <see cref="DataProtector"/>
         /// class.
         /// </summary>
-        //[DebuggerStepThrough]
+        [DebuggerStepThrough]
         private DataProtector() 
         {
             // Use a unique guid for the purpose.
@@ -62,6 +62,7 @@ namespace CG.DataProtection
             // Are we running windows?
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
+                // Set the local path.
                 localAppData = Environment.GetEnvironmentVariable(
                     "LOCALAPPDATA"
                     );
@@ -70,6 +71,7 @@ namespace CG.DataProtection
             // Are we running linux?
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
             {
+                // Set the local path.
                 localAppData = Environment.GetEnvironmentVariable("XDG_DATA_HOME") ?? 
                     Path.Combine(
                         Environment.GetEnvironmentVariable("HOME"), 
@@ -81,6 +83,7 @@ namespace CG.DataProtection
             // Are we running OSX?
             if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
             {
+                // Set the local path.
                 localAppData = Path.Combine(
                     Environment.GetEnvironmentVariable("HOME"), 
                         "Library", 
@@ -99,9 +102,12 @@ namespace CG.DataProtection
                 new DirectoryInfo(destFolder),
                 options =>
                 {
+                    // For now, let's keep the keys for awhile.
                     options.SetDefaultKeyLifetime(
-                        TimeSpan.MaxValue.Subtract(TimeSpan.FromDays(1))
+                        TimeSpan.MaxValue.Subtract(TimeSpan.FromDays(365))
                         );
+
+                    // Set the application name.
                     options.SetApplicationName(Purpose);
                 });
 

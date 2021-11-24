@@ -3,7 +3,10 @@ using CG.DataProtection;
 using CG.DataProtection.Properties;
 using CG.Validations;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Security.Cryptography;
 
 namespace Microsoft.AspNetCore.DataProtection
@@ -46,9 +49,9 @@ namespace Microsoft.AspNetCore.DataProtection
 
             // Get a list of all object type properties.
             var props = options.GetType().GetProperties()
-                .Where(
-                    x => x.PropertyType.IsClass && x.PropertyType != typeof(string)
-                    ).ToList();
+                .Where(x => x.PropertyType.IsClass)
+                .Where(x => x.PropertyType != typeof(string))
+                .ToList();
 
             // Loop and protect each property, recursively.
             props.ForEach(prop =>
@@ -171,9 +174,13 @@ namespace Microsoft.AspNetCore.DataProtection
             Guard.Instance().ThrowIfNull(dataProtector, nameof(dataProtector))
                 .ThrowIfNull(options, nameof(options));
 
+            // Get the actual type of object.
+            var optionType = options.GetType();
+
             // Get a list of all object type properties.
-            var props = options.GetType().GetProperties()
-                .Where(x => x.PropertyType.IsClass && x.PropertyType != typeof(string))
+            var props = optionType.GetProperties()
+                .Where(x => x.PropertyType.IsClass)
+                .Where(x => x.PropertyType != typeof(string))
                 .ToList();
 
             // Loop and unprotect each property, recursively.
@@ -208,12 +215,12 @@ namespace Microsoft.AspNetCore.DataProtection
                             ),
                         innerException: ex
                         ).SetOriginator(nameof(DataProtectorExtensions))
-                         .SetDateTime();
+                            .SetDateTime();
                 }
             });
 
             // Get a list of all the read/write properties of type: string.
-            props = options.GetType().GetProperties()
+            props = optionType.GetProperties()
                 .Where(x => x.CanRead && x.CanWrite && x.PropertyType == typeof(string))
                 .ToList();
 
@@ -263,7 +270,7 @@ namespace Microsoft.AspNetCore.DataProtection
                                     if ("An error occurred during a cryptographic operation." != ex.Message)
                                     {
                                         throw;
-                                    }                                    
+                                    }
                                 }
                             }
                         }
