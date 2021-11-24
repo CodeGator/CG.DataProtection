@@ -14,11 +14,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.DataProtection.AesProtector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.DataProtection.AesProtector.html",
+          "hash": "qTCCqVyZ5PvDrcssfvt8UffsKOnkfmjIVHpsxbjHv5E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.DataProtection.DataProtector.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.DataProtection.DataProtector.html",
-          "hash": "vajEaqe+/9d8nkoNfqyoMHjQRv1qEatzBEoxOyQ9gnc="
+          "hash": "Ln/jewumNCGjxgdhUB+SwqjCX+ZUnOLPwmnQA6sh/vQ="
         }
       },
       "is_incremental": false,
@@ -30,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.DataProtection.ProtectedPropertyAttribute.html",
-          "hash": "IfeKQ6dAspsB1wiYWyyE27Q3jSi5u/TIPojH8cqcpd0="
+          "hash": "zsYT57g9nb6tYzh8r0XdTmekNua4rdP++1DrtQVK2+4="
         }
       },
       "is_incremental": false,
@@ -42,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.DataProtection.RijndaelProtector.html",
-          "hash": "hBdL5LH3omKgsGO1bUycB30elIg+8kokxgoZy+V/Ovo="
+          "hash": "nMFH6I4KtYoyWwif7T0v0StKssbExPPMfWbFRhvnuxg="
         }
       },
       "is_incremental": false,
@@ -54,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.DataProtection.html",
-          "hash": "fQbNp6lfVa20+ONNkWgZUFikqjCz17ZGUU5DTIZKSmA="
+          "hash": "dvKeQ+26M4q2mO8fG1S68CUEm979YqSfJwzEzn0QhLI="
         }
       },
       "is_incremental": false,
@@ -66,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html",
-          "hash": "ooc1OIvAoQwbDvgTXZvIH7/rM5mbvUsOW26JAOQkK/Q="
+          "hash": "lER+PU+7vfaOV2HPJQ0oeEmyxmCNtDcYpJ1/iFZbABI="
         }
       },
       "is_incremental": false,
@@ -78,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.DataProtection.html",
-          "hash": "ISGX7VmwUFhRTh0P/P+jH2/SC/jpum67+FN+gVnyh3o="
+          "hash": "/Rp/Et10CL/WPfOifGkjpV5Sjg1VFXdPfNja0i+3wM4="
         }
       },
       "is_incremental": false,
@@ -90,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html",
-          "hash": "Lm+qbNL3sfUARr85fJJSDCiZ5y4fpVpvJQMleIeNkYA="
+          "hash": "G53YBXy6jDqfFYyIov5wJHpGNPYbSy2ZEPx6shJseJs="
         }
       },
       "is_incremental": false,
@@ -102,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.html",
-          "hash": "rhpQcusJoq9UxhRa+NQgCtSob/A6AVXSTvftgWArnQY="
+          "hash": "IxFMnqGXMHDlF73gMsqr+8FrNdRdxbnpoc7bWx1KDkQ="
         }
       },
       "is_incremental": false,
@@ -114,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "NCNrLqeq5zCgH15kFe993r8YwLm/8U/yaM9f+UjCyd4="
+          "hash": "LBQmHFIZHMZ9ZKgMgzNtTZCxuTl8BLjIKf7hcI4sbFI="
         }
       },
       "is_incremental": false,
@@ -126,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "vaq84zuBDKDfPsrosudT6z8YwxF5I5sh5cT7i0RAoco="
+          "hash": "obA8+Wq2rRSOb8iJqgYOFxwlQvdF4RfUjt9LDoGwfMg="
         }
       },
       "is_incremental": false,
@@ -194,7 +206,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "OUkNLXNxNauaehdcZJUvL89CjPCYt7e+bFCTzfJkafw="
+          "hash": "D98T7rtmVUcts9AfnECdUPRY4BWE17nRNOgBYogZ2+s="
         }
       },
       "is_incremental": false,
@@ -233,7 +245,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 8,
+          "total_file_count": 9,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

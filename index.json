@@ -1,4 +1,9 @@
 {
+  "api/CG.DataProtection.AesProtector.html": {
+    "href": "api/CG.DataProtection.AesProtector.html",
+    "title": "Class AesProtector",
+    "keywords": "Class AesProtector This class provides AES encryption / decryption support. Inheritance System.Object CG.SingletonBase < AesProtector > AesProtector Inherited Members CG.SingletonBase<CG.DataProtection.AesProtector>._instance CG.SingletonBase<CG.DataProtection.AesProtector>.Instance() System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.DataProtection Assembly : CG.DataProtection.dll Syntax public class AesProtector : SingletonBase<AesProtector> Methods Protect(String, String, String) This method returns the protected value of the plainText parameter. Declaration public string Protect(string password, string salt, string plainText) Parameters Type Name Description System.String password The password to use for the operation. System.String salt The SALT/IV value to use for the operation. System.String plainText The plain text to use for the operation. Returns Type Description System.String The protected value of the plainText parameter. Unprotect(String, String, String) This method returns the unprotected value of the encryptedText parameter. Declaration public string Unprotect(string password, string salt, string encryptedText) Parameters Type Name Description System.String password The password to use for the operation. System.String salt The SALT/IV value to use for the operation. System.String encryptedText The protected text to use for the operation. Returns Type Description System.String The unprotected value of the encryptedText parameter."
+  },
   "api/CG.DataProtection.DataProtector.html": {
     "href": "api/CG.DataProtection.DataProtector.html",
     "title": "Class DataProtector",
@@ -7,7 +12,7 @@
   "api/CG.DataProtection.html": {
     "href": "api/CG.DataProtection.html",
     "title": "Namespace CG.DataProtection",
-    "keywords": "Namespace CG.DataProtection Classes DataProtector This class is a singleton implementation of the Microsoft.AspNetCore.DataProtection.IDataProtector interface. ProtectedPropertyAttribute This class represents an encrypted option property. RijndaelProtector This class provides Rijndael encryption / decryption support."
+    "keywords": "Namespace CG.DataProtection Classes AesProtector This class provides AES encryption / decryption support. DataProtector This class is a singleton implementation of the Microsoft.AspNetCore.DataProtection.IDataProtector interface. ProtectedPropertyAttribute This class represents an encrypted option property. RijndaelProtector This class provides Rijndael encryption / decryption support."
   },
   "api/CG.DataProtection.ProtectedPropertyAttribute.html": {
     "href": "api/CG.DataProtection.ProtectedPropertyAttribute.html",

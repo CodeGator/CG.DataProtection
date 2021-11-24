@@ -7,6 +7,38 @@ references:
   commentId: N:CG.DataProtection
   fullName: CG.DataProtection
   nameWithType: CG.DataProtection
+- uid: CG.DataProtection.AesProtector
+  name: AesProtector
+  href: api/CG.DataProtection.AesProtector.html
+  commentId: T:CG.DataProtection.AesProtector
+  fullName: CG.DataProtection.AesProtector
+  nameWithType: AesProtector
+- uid: CG.DataProtection.AesProtector.Protect(System.String,System.String,System.String)
+  name: Protect(String, String, String)
+  href: api/CG.DataProtection.AesProtector.html#CG_DataProtection_AesProtector_Protect_System_String_System_String_System_String_
+  commentId: M:CG.DataProtection.AesProtector.Protect(System.String,System.String,System.String)
+  fullName: CG.DataProtection.AesProtector.Protect(System.String, System.String, System.String)
+  nameWithType: AesProtector.Protect(String, String, String)
+- uid: CG.DataProtection.AesProtector.Protect*
+  name: Protect
+  href: api/CG.DataProtection.AesProtector.html#CG_DataProtection_AesProtector_Protect_
+  commentId: Overload:CG.DataProtection.AesProtector.Protect
+  isSpec: "True"
+  fullName: CG.DataProtection.AesProtector.Protect
+  nameWithType: AesProtector.Protect
+- uid: CG.DataProtection.AesProtector.Unprotect(System.String,System.String,System.String)
+  name: Unprotect(String, String, String)
+  href: api/CG.DataProtection.AesProtector.html#CG_DataProtection_AesProtector_Unprotect_System_String_System_String_System_String_
+  commentId: M:CG.DataProtection.AesProtector.Unprotect(System.String,System.String,System.String)
+  fullName: CG.DataProtection.AesProtector.Unprotect(System.String, System.String, System.String)
+  nameWithType: AesProtector.Unprotect(String, String, String)
+- uid: CG.DataProtection.AesProtector.Unprotect*
+  name: Unprotect
+  href: api/CG.DataProtection.AesProtector.html#CG_DataProtection_AesProtector_Unprotect_
+  commentId: Overload:CG.DataProtection.AesProtector.Unprotect
+  isSpec: "True"
+  fullName: CG.DataProtection.AesProtector.Unprotect
+  nameWithType: AesProtector.Unprotect
 - uid: CG.DataProtection.DataProtector
   name: DataProtector
   href: api/CG.DataProtection.DataProtector.html
