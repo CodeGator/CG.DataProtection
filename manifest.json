@@ -14,11 +14,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataProtection.AesProtector.yml",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.DataProtection.AesProtector.html",
-          "hash": "qTCCqVyZ5PvDrcssfvt8UffsKOnkfmjIVHpsxbjHv5E="
+          "relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.html",
+          "hash": "tkm8UDOS51P8LqaVNUfgoUF2kuk/fr1ZUtiTRnUBhZo="
         }
       },
       "is_incremental": false,
@@ -26,95 +26,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataProtection.DataProtector.yml",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.DataProtection.DataProtector.html",
-          "hash": "Ln/jewumNCGjxgdhUB+SwqjCX+ZUnOLPwmnQA6sh/vQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataProtection.ProtectedPropertyAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataProtection.ProtectedPropertyAttribute.html",
-          "hash": "zsYT57g9nb6tYzh8r0XdTmekNua4rdP++1DrtQVK2+4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataProtection.RijndaelProtector.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataProtection.RijndaelProtector.html",
-          "hash": "nMFH6I4KtYoyWwif7T0v0StKssbExPPMfWbFRhvnuxg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.DataProtection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.DataProtection.html",
-          "hash": "dvKeQ+26M4q2mO8fG1S68CUEm979YqSfJwzEzn0QhLI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AspNetCore.DataProtection.DataProtectorExtensions.html",
-          "hash": "lER+PU+7vfaOV2HPJQ0oeEmyxmCNtDcYpJ1/iFZbABI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.AspNetCore.DataProtection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AspNetCore.DataProtection.html",
-          "hash": "/Rp/Et10CL/WPfOifGkjpV5Sjg1VFXdPfNja0i+3wM4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html",
-          "hash": "G53YBXy6jDqfFYyIov5wJHpGNPYbSy2ZEPx6shJseJs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Extensions.DependencyInjection.html",
-          "hash": "IxFMnqGXMHDlF73gMsqr+8FrNdRdxbnpoc7bWx1KDkQ="
+          "relative_path": "api/Microsoft.AspNetCore.Builder.html",
+          "hash": "6ILaqGfwTlR84/NLLP7ZAo/clmr1ZrMSCE+2kNk34ZE="
         }
       },
       "is_incremental": false,
@@ -126,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "LBQmHFIZHMZ9ZKgMgzNtTZCxuTl8BLjIKf7hcI4sbFI="
+          "hash": "BnyvPIcdn82eNG8zWLonW1y39Ob0OlScSXxlMRufDPg="
         }
       },
       "is_incremental": false,
@@ -138,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "obA8+Wq2rRSOb8iJqgYOFxwlQvdF4RfUjt9LDoGwfMg="
+          "hash": "GSM6/qjA0Y6/lyPTFQFyqzR0RP/48E3IDhzCnmbB9WQ="
         }
       },
       "is_incremental": false,
@@ -206,7 +122,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "D98T7rtmVUcts9AfnECdUPRY4BWE17nRNOgBYogZ2+s="
+          "hash": "Z9TLo9rJZq0qyFAr52cu8fhbOPtYzf9lNGASeXF/urU="
         }
       },
       "is_incremental": false,
@@ -218,7 +134,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "Q6qN9hVte5JKIxR1+h/+0lOwXkkptfjOul0rhp4m/ZY="
+          "hash": "Hp+nHgq5Le/EOyj08++2NTQDt53JtPnFAQnuY8EOllE="
         }
       },
       "is_incremental": false,
@@ -245,7 +161,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 9,
+          "total_file_count": 2,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
