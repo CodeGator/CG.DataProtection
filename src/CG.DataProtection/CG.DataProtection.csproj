@@ -1,61 +1,52 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Description>The package defines data protection extensions used by other CodeGator packages.
+	<PropertyGroup>
+		<TargetFrameworks>net6.0</TargetFrameworks>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Description>
+			The package defines data protection extensions used by other CodeGator packages.
 
-Platforms supported:
-      .NET 6.x or above</Description>
-    <Copyright>Copyright © 2018 - 2022 by CodeGator. All rights reserved.</Copyright>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/CodeGator/CG.DataProtection</PackageProjectUrl>
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/CodeGator/CG.DataProtection</RepositoryUrl>
-    <PackageTags>Data Protection, CG.DataProtection, CodeGator</PackageTags>
-    <Authors>Martin Cook</Authors>
-    <Company>CodeGator</Company>
-    <PackageIcon>packageDefaultIcon-50x50.png</PackageIcon>
-    <PackageIconUrl />
-  </PropertyGroup>
+			Platforms supported:
+			.NET 6.x or above
+		</Description>
+		<Copyright>Copyright © 2018 - 2022 by CodeGator. All rights reserved.</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/CodeGator/CG.DataProtection</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/CodeGator/CG.DataProtection</RepositoryUrl>
+		<PackageTags>Data Protection, CG.DataProtection, CodeGator</PackageTags>
+		<Authors>Martin Cook</Authors>
+		<Company>CodeGator</Company>
+		<PackageIcon>packageDefaultIcon-50x50.png</PackageIcon>
+		<PackageIconUrl />
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\net6.0\cg.dataprotection.xml</DocumentationFile>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>bin\Debug\net6.0\cg.dataprotection.xml</DocumentationFile>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="CG.Core" Version="2022.1.1" />
-    <PackageReference Include="CG.DependencyInjection" Version="2022.1.1" />
-    <PackageReference Include="CG.Options" Version="2022.1.1" />
-    <PackageReference Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="6.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.DataProtection.Extensions" Version="6.0.0" />
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.244">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Azure.Extensions.AspNetCore.DataProtection.Blobs" Version="1.2.3" />
+		<PackageReference Include="CG.Options" Version="2022.1.5" />
+		<PackageReference Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.DataProtection.Extensions" Version="7.0.0" />
+		<PackageReference Include="Nerdbank.GitVersioning" Version="3.5.119">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
 
-  <ItemGroup>
-    <Compile Update="Properties\Resources.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\packageDefaultIcon-50x50.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="..\..\packageDefaultIcon-50x50.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
 
 </Project>

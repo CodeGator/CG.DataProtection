@@ -1,62 +1,26 @@
-﻿using CG.Options;
-using Microsoft.AspNetCore.DataProtection;
-using Microsoft.Extensions.Configuration;
-using System;
-
-namespace CG.DataProtection.QuickStart
+﻿
+try
 {
-    public class TestOptions : OptionsBase
+    BootstrapLogger.Instance()
+        .LogInformation("BootstrapLogger can log before there is a host!");
+
+    var builder = new HostBuilder().ConfigureLogging(options =>
     {
-        public string A { get; set; }
+        options.SetMinimumLevel(LogLevel.Information);
+        options.AddSimpleConsole();
+    });
 
-        [ProtectedProperty]
-        public string B { get; set; }
+    var host = builder.Build();
 
-        [ProtectedProperty(Optional = true)]
-        public string C { get; set; }
-    }
-
-    class Program
+    host.RunDelegate((host, token) =>
     {
-        static void Main(string[] args)
-        {
-            var options = new TestOptions()
-            {
-                A = "secret 1",
-                B = "secret 2",
-                C = "secret 3"
-            };
-
-            // Example: Protect any decorated property values.
-            DataProtector.Instance().ProtectProperties(options);
-
-            // Notice that we never touched the non-decorated property.
-            Console.WriteLine($"property A is: {options.A}");
-
-            // Notice that we protected the decorated property.
-            Console.WriteLine($"property B is: {options.B}");
-
-            // Notice that we protected the decorated property.
-            Console.WriteLine($"property C is: {options.C}");
-
-            // Let's unprotect C, to demonstrate the 'optional' feature.
-            options.C = "plain text secret";
-
-            // Example: Unprotect any protected properties.
-            DataProtector.Instance().UnprotectProperties(options);
-
-            // Notice that we never touched the non-decorated property.
-            Console.WriteLine($"property A is: {options.A}");
-
-            // Notice that we unprotected the decorated property.
-            Console.WriteLine($"property B is: {options.B}");
-
-            // Notice that we the optional property, since it held plain text.
-            Console.WriteLine($"property C is: {options.C}");
-
-            // We're done!
-            Console.WriteLine("Done - press any key to exit");
-            Console.ReadKey();
-        }
-    }
+        var logger = host.Services.GetRequiredService<ILogger<Program>>();
+        logger.LogInformation("This is normal .NET logging inside the host.");
+    });
 }
+finally
+{
+    BootstrapLogger.Instance()
+        .LogInformation("BootstrapLogger can log after the host is gone!");
+}
+
