@@ -1,6 +1,10 @@
 # CG.DataProtection change log
 ---
 
+## 2023.1
+
+* bug fixes
+
 ## 2022.2
 * I moved the crypto stuff to another package.
 
