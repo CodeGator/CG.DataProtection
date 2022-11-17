@@ -4,7 +4,7 @@ namespace CG.DataProtection.Options;
 /// <summary>
 /// This class represents configuration settings for Azure key storage.
 /// </summary>
-internal class AzureKeyStorageOptions
+public class AzureKeyStorageOptions
 {
     // *******************************************************************
     // Properties.
