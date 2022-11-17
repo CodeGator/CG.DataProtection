@@ -14,11 +14,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.DataProtection.Options.AzureKeyStorageOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.DataProtection.Options.AzureKeyStorageOptions.html",
+          "hash": "Q8bz8p6nHV6DJ/D9yF3nyFqzS4mjWeKojTM5LtS3Xws="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.DataProtection.Options.DataProtectionOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.DataProtection.Options.DataProtectionOptions.html",
+          "hash": "gn1jcG7hqH6Ig3pu9UflUcpbJVuGOL1t+G/eJgC5tQA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.DataProtection.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.DataProtection.Options.html",
+          "hash": "9jtS83iJLfmsrXnEMov1kl/+YfMKbHwh2Ol+9f1rRQU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.yml",
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.html",
-          "hash": "tkm8UDOS51P8LqaVNUfgoUF2kuk/fr1ZUtiTRnUBhZo="
+          "hash": "kpuumtXgRAD5QF+qkPqKRTFhTQOhdgkQNiCtD6A4PDg="
         }
       },
       "is_incremental": false,
@@ -42,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "BnyvPIcdn82eNG8zWLonW1y39Ob0OlScSXxlMRufDPg="
+          "hash": "Z/6krKRPGIbrxW32X3ZW+miKmvHEWTTavHzQA85GCoE="
         }
       },
       "is_incremental": false,
@@ -134,7 +170,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "Hp+nHgq5Le/EOyj08++2NTQDt53JtPnFAQnuY8EOllE="
+          "hash": "KFtP7nKUILOP5KjUfWHX2DfkWy9EtnlprHZZWvvkyx0="
         }
       },
       "is_incremental": false,
@@ -161,7 +197,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 2,
+          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

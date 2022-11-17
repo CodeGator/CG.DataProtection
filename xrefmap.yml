@@ -1,6 +1,89 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: CG.DataProtection.Options
+  name: CG.DataProtection.Options
+  href: api/CG.DataProtection.Options.html
+  commentId: N:CG.DataProtection.Options
+  fullName: CG.DataProtection.Options
+  nameWithType: CG.DataProtection.Options
+- uid: CG.DataProtection.Options.AzureKeyStorageOptions
+  name: AzureKeyStorageOptions
+  href: api/CG.DataProtection.Options.AzureKeyStorageOptions.html
+  commentId: T:CG.DataProtection.Options.AzureKeyStorageOptions
+  fullName: CG.DataProtection.Options.AzureKeyStorageOptions
+  nameWithType: AzureKeyStorageOptions
+- uid: CG.DataProtection.Options.AzureKeyStorageOptions.BlobName
+  name: BlobName
+  href: api/CG.DataProtection.Options.AzureKeyStorageOptions.html#CG_DataProtection_Options_AzureKeyStorageOptions_BlobName
+  commentId: P:CG.DataProtection.Options.AzureKeyStorageOptions.BlobName
+  fullName: CG.DataProtection.Options.AzureKeyStorageOptions.BlobName
+  nameWithType: AzureKeyStorageOptions.BlobName
+- uid: CG.DataProtection.Options.AzureKeyStorageOptions.BlobName*
+  name: BlobName
+  href: api/CG.DataProtection.Options.AzureKeyStorageOptions.html#CG_DataProtection_Options_AzureKeyStorageOptions_BlobName_
+  commentId: Overload:CG.DataProtection.Options.AzureKeyStorageOptions.BlobName
+  isSpec: "True"
+  fullName: CG.DataProtection.Options.AzureKeyStorageOptions.BlobName
+  nameWithType: AzureKeyStorageOptions.BlobName
+- uid: CG.DataProtection.Options.AzureKeyStorageOptions.ConnectionString
+  name: ConnectionString
+  href: api/CG.DataProtection.Options.AzureKeyStorageOptions.html#CG_DataProtection_Options_AzureKeyStorageOptions_ConnectionString
+  commentId: P:CG.DataProtection.Options.AzureKeyStorageOptions.ConnectionString
+  fullName: CG.DataProtection.Options.AzureKeyStorageOptions.ConnectionString
+  nameWithType: AzureKeyStorageOptions.ConnectionString
+- uid: CG.DataProtection.Options.AzureKeyStorageOptions.ConnectionString*
+  name: ConnectionString
+  href: api/CG.DataProtection.Options.AzureKeyStorageOptions.html#CG_DataProtection_Options_AzureKeyStorageOptions_ConnectionString_
+  commentId: Overload:CG.DataProtection.Options.AzureKeyStorageOptions.ConnectionString
+  isSpec: "True"
+  fullName: CG.DataProtection.Options.AzureKeyStorageOptions.ConnectionString
+  nameWithType: AzureKeyStorageOptions.ConnectionString
+- uid: CG.DataProtection.Options.AzureKeyStorageOptions.ContainerName
+  name: ContainerName
+  href: api/CG.DataProtection.Options.AzureKeyStorageOptions.html#CG_DataProtection_Options_AzureKeyStorageOptions_ContainerName
+  commentId: P:CG.DataProtection.Options.AzureKeyStorageOptions.ContainerName
+  fullName: CG.DataProtection.Options.AzureKeyStorageOptions.ContainerName
+  nameWithType: AzureKeyStorageOptions.ContainerName
+- uid: CG.DataProtection.Options.AzureKeyStorageOptions.ContainerName*
+  name: ContainerName
+  href: api/CG.DataProtection.Options.AzureKeyStorageOptions.html#CG_DataProtection_Options_AzureKeyStorageOptions_ContainerName_
+  commentId: Overload:CG.DataProtection.Options.AzureKeyStorageOptions.ContainerName
+  isSpec: "True"
+  fullName: CG.DataProtection.Options.AzureKeyStorageOptions.ContainerName
+  nameWithType: AzureKeyStorageOptions.ContainerName
+- uid: CG.DataProtection.Options.DataProtectionOptions
+  name: DataProtectionOptions
+  href: api/CG.DataProtection.Options.DataProtectionOptions.html
+  commentId: T:CG.DataProtection.Options.DataProtectionOptions
+  fullName: CG.DataProtection.Options.DataProtectionOptions
+  nameWithType: DataProtectionOptions
+- uid: CG.DataProtection.Options.DataProtectionOptions.AzureKeyStorage
+  name: AzureKeyStorage
+  href: api/CG.DataProtection.Options.DataProtectionOptions.html#CG_DataProtection_Options_DataProtectionOptions_AzureKeyStorage
+  commentId: P:CG.DataProtection.Options.DataProtectionOptions.AzureKeyStorage
+  fullName: CG.DataProtection.Options.DataProtectionOptions.AzureKeyStorage
+  nameWithType: DataProtectionOptions.AzureKeyStorage
+- uid: CG.DataProtection.Options.DataProtectionOptions.AzureKeyStorage*
+  name: AzureKeyStorage
+  href: api/CG.DataProtection.Options.DataProtectionOptions.html#CG_DataProtection_Options_DataProtectionOptions_AzureKeyStorage_
+  commentId: Overload:CG.DataProtection.Options.DataProtectionOptions.AzureKeyStorage
+  isSpec: "True"
+  fullName: CG.DataProtection.Options.DataProtectionOptions.AzureKeyStorage
+  nameWithType: DataProtectionOptions.AzureKeyStorage
+- uid: CG.DataProtection.Options.DataProtectionOptions.DisableAutomaticKeyGeneration
+  name: DisableAutomaticKeyGeneration
+  href: api/CG.DataProtection.Options.DataProtectionOptions.html#CG_DataProtection_Options_DataProtectionOptions_DisableAutomaticKeyGeneration
+  commentId: P:CG.DataProtection.Options.DataProtectionOptions.DisableAutomaticKeyGeneration
+  fullName: CG.DataProtection.Options.DataProtectionOptions.DisableAutomaticKeyGeneration
+  nameWithType: DataProtectionOptions.DisableAutomaticKeyGeneration
+- uid: CG.DataProtection.Options.DataProtectionOptions.DisableAutomaticKeyGeneration*
+  name: DisableAutomaticKeyGeneration
+  href: api/CG.DataProtection.Options.DataProtectionOptions.html#CG_DataProtection_Options_DataProtectionOptions_DisableAutomaticKeyGeneration_
+  commentId: Overload:CG.DataProtection.Options.DataProtectionOptions.DisableAutomaticKeyGeneration
+  isSpec: "True"
+  fullName: CG.DataProtection.Options.DataProtectionOptions.DisableAutomaticKeyGeneration
+  nameWithType: DataProtectionOptions.DisableAutomaticKeyGeneration
 - uid: Microsoft.AspNetCore.Builder
   name: Microsoft.AspNetCore.Builder
   href: api/Microsoft.AspNetCore.Builder.html
@@ -13,6 +96,15 @@ references:
   commentId: T:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions
   fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions
   nameWithType: WebApplicationBuilderExtensions
+- uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddDataProtectionWithSharedKeys(Microsoft.AspNetCore.Builder.WebApplicationBuilder,Action{DataProtectionOptions},System.Nullable{ILogger})
+  name: AddDataProtectionWithSharedKeys(WebApplicationBuilder, Action<DataProtectionOptions>, Nullable<ILogger>)
+  href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions_AddDataProtectionWithSharedKeys_Microsoft_AspNetCore_Builder_WebApplicationBuilder_Action_DataProtectionOptions__System_Nullable_ILogger__
+  commentId: M:Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddDataProtectionWithSharedKeys(Microsoft.AspNetCore.Builder.WebApplicationBuilder,Action{DataProtectionOptions},System.Nullable{ILogger})
+  name.vb: AddDataProtectionWithSharedKeys(WebApplicationBuilder, Action(Of DataProtectionOptions), Nullable(Of ILogger))
+  fullName: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddDataProtectionWithSharedKeys(Microsoft.AspNetCore.Builder.WebApplicationBuilder, Action<DataProtectionOptions>, System.Nullable<ILogger>)
+  fullName.vb: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddDataProtectionWithSharedKeys(Microsoft.AspNetCore.Builder.WebApplicationBuilder, Action(Of DataProtectionOptions), System.Nullable(Of ILogger))
+  nameWithType: WebApplicationBuilderExtensions.AddDataProtectionWithSharedKeys(WebApplicationBuilder, Action<DataProtectionOptions>, Nullable<ILogger>)
+  nameWithType.vb: WebApplicationBuilderExtensions.AddDataProtectionWithSharedKeys(WebApplicationBuilder, Action(Of DataProtectionOptions), Nullable(Of ILogger))
 - uid: Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.AddDataProtectionWithSharedKeys(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String,System.Nullable{ILogger})
   name: AddDataProtectionWithSharedKeys(WebApplicationBuilder, String, Nullable<ILogger>)
   href: api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_WebApplicationBuilderExtensions_AddDataProtectionWithSharedKeys_Microsoft_AspNetCore_Builder_WebApplicationBuilder_System_String_System_Nullable_ILogger__
