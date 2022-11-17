@@ -4,7 +4,7 @@ namespace CG.DataProtection.Options;
 /// <summary>
 /// This class represents configuration settings for data protection startup.
 /// </summary>
-internal class DataProtectionOptions
+public class DataProtectionOptions
 {
     // *******************************************************************
     // Properties.

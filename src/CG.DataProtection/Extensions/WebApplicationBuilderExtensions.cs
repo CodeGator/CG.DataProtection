@@ -1,4 +1,6 @@
 ﻿
+using Microsoft.Extensions.Configuration;
+
 namespace Microsoft.AspNetCore.Builder;
 
 /// <summary>
@@ -12,6 +14,84 @@ public static partial class WebApplicationBuilderExtensions
     // *******************************************************************
 
     #region Public methods
+
+    public static WebApplicationBuilder AddDataProtectionWithSharedKeys(
+        this WebApplicationBuilder webApplicationBuilder,
+        Action<DataProtectionOptions> optionsDelegate,
+        ILogger? bootstrapLogger = null
+        )
+    {
+        // Validate the parameters before attempting to use them.
+        Guard.Instance().ThrowIfNull(webApplicationBuilder, nameof(webApplicationBuilder));
+
+        // Tell the world what we are about to do.
+        bootstrapLogger?.LogDebug(
+            "Calling the options delegate"
+            );
+
+        // Give the caller a change to change the options.
+        var dataProtectionOptions = new DataProtectionOptions();
+        optionsDelegate?.Invoke(dataProtectionOptions);
+
+        // Tell the world what we are about to do.
+        bootstrapLogger?.LogDebug(
+            "Validating the Data Protection options"
+            );
+
+        // Ensure the options are valid.
+        Guard.Instance().ThrowIfInvalidObject(dataProtectionOptions, nameof(dataProtectionOptions));
+
+        // Tell the world what we are about to do.
+        bootstrapLogger?.LogDebug(
+            "Wiring up the Data Protection options"
+            );
+
+        // Ensure the options are available via the DI container.
+        webApplicationBuilder.Services.ConfigureOptions(
+            dataProtectionOptions
+            );
+
+        // Tell the world what we are about to do.
+        bootstrapLogger?.LogInformation(
+            "Registering the ASP.NET data protection provider"
+            );
+
+        // Add the data protection provider.
+        var builder = webApplicationBuilder.Services.AddDataProtection();
+
+        // Should we add shared Azure keys?
+        if (dataProtectionOptions.AzureKeyStorage is not null)
+        {
+            // Tell the world what we are about to do.
+            bootstrapLogger?.LogInformation(
+                "Wiring up the ASP.NET data protection provider"
+                );
+
+            // Wire up the Azure key storage.
+            builder.PersistKeysToAzureBlobStorage(
+                dataProtectionOptions.AzureKeyStorage.ConnectionString,
+                dataProtectionOptions.AzureKeyStorage.ContainerName,
+                dataProtectionOptions.AzureKeyStorage.BlobName
+                );
+        }
+
+        // Should we disable automatic key generation?
+        if (dataProtectionOptions.DisableAutomaticKeyGeneration)
+        {
+            // Tell the world what we are about to do.
+            bootstrapLogger?.LogWarning(
+                "Disabling automatic key generation for the ASP.NET data protection provider"
+                );
+
+            // Disable automatic key generation.
+            builder.DisableAutomaticKeyGeneration();
+        }
+
+        // Return the application builder.
+        return webApplicationBuilder;
+    }
+
+    // *******************************************************************
 
     /// <summary>
     /// This method adds the services required for ASP.NET data protection 
@@ -45,7 +125,7 @@ public static partial class WebApplicationBuilderExtensions
         // Configure the data protection options.
         webApplicationBuilder.Services.ConfigureOptions<DataProtectionOptions>(
             webApplicationBuilder.Configuration.GetSection(configurationPath),
-            out var options
+            out var dataProtectionOptions
             );
 
         // Tell the world what we are about to do.
@@ -57,7 +137,7 @@ public static partial class WebApplicationBuilderExtensions
         var builder = webApplicationBuilder.Services.AddDataProtection();
 
         // Should we add shared Azure keys?
-        if (options.AzureKeyStorage is not null)
+        if (dataProtectionOptions.AzureKeyStorage is not null)
         {
             // Tell the world what we are about to do.
             bootstrapLogger?.LogInformation(
@@ -66,14 +146,14 @@ public static partial class WebApplicationBuilderExtensions
 
             // Wire up the Azure key storage.
             builder.PersistKeysToAzureBlobStorage(
-                options.AzureKeyStorage.ConnectionString,
-                options.AzureKeyStorage.ContainerName,
-                options.AzureKeyStorage.BlobName
+                dataProtectionOptions.AzureKeyStorage.ConnectionString,
+                dataProtectionOptions.AzureKeyStorage.ContainerName,
+                dataProtectionOptions.AzureKeyStorage.BlobName
                 );
         }
 
         // Should we disable automatic key generation?
-        if (options.DisableAutomaticKeyGeneration)
+        if (dataProtectionOptions.DisableAutomaticKeyGeneration)
         {
             // Tell the world what we are about to do.
             bootstrapLogger?.LogWarning(
