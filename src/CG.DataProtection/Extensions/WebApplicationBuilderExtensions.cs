@@ -52,7 +52,7 @@ public static partial class WebApplicationBuilderExtensions
             );
 
         // Tell the world what we are about to do.
-        bootstrapLogger?.LogInformation(
+        bootstrapLogger?.LogDebug(
             "Registering the ASP.NET data protection provider"
             );
 
@@ -63,7 +63,7 @@ public static partial class WebApplicationBuilderExtensions
         if (dataProtectionOptions.AzureKeyStorage is not null)
         {
             // Tell the world what we are about to do.
-            bootstrapLogger?.LogInformation(
+            bootstrapLogger?.LogDebug(
                 "Wiring up the ASP.NET data protection provider"
                 );
 
@@ -129,7 +129,7 @@ public static partial class WebApplicationBuilderExtensions
             );
 
         // Tell the world what we are about to do.
-        bootstrapLogger?.LogInformation(
+        bootstrapLogger?.LogDebug(
             "Registering the ASP.NET data protection provider"
             );
 
@@ -140,7 +140,7 @@ public static partial class WebApplicationBuilderExtensions
         if (dataProtectionOptions.AzureKeyStorage is not null)
         {
             // Tell the world what we are about to do.
-            bootstrapLogger?.LogInformation(
+            bootstrapLogger?.LogDebug(
                 "Registering Azure storage for the ASP.NET data protection provider"
                 );
 
